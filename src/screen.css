@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  background: #0e1210;
+  color: #f2ead8;
+  font-family: Georgia, serif;
+}
+#shell {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  align-items: flex-start;
+}
+#cabinet {
+  display: block;
+  background: #0e1210;
+  max-width: min(960px, 100%);
+  height: auto;
+}
+#counter {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#counter[hidden] {
+  display: none;
+}
+#counter button {
+  background: #2e5a4c;
+  color: #f2ead8;
+  border: 1px solid #b07a32;
+  padding: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+#counter button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+#hint {
+  margin: 0 12px 12px;
+  color: #ead9b0;
+  font-size: 15px;
+}
